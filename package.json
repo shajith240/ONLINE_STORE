@@ -1,0 +1,12 @@
+{
+  "name": "shoe-shop",
+  "version": "1.0.0",
+  "description": "A simple shoe shop website",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

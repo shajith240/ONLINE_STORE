@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe Shop</title>
+    <!-- Add to HTML head -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      class="star star1"
+      viewBox="0 0 256 256"
+    >
+      <path
+        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+      ></path>
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      class="star star2"
+      viewBox="0 0 256 256"
+    >
+      <path
+        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+      ></path>
+    </svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      class="star star3"
+      viewBox="0 0 256 256"
+    >
+      <path
+        d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"
+      ></path>
+    </svg>
+  </div>
+  <body>
+    <!-- Main Content -->
+    <div id="main-content">
+      <nav class="navbar">
+        <div class="container">
+          <div class="nav-links">
+            <a href="#hero" aria-label="Home">Home</a>
+            <a href="#products" aria-label="Products">Products</a>
+          </div>
+          <div class="separator"></div>
+          <div class="nav-links">
+            <a href="#instagram" aria-label="Instagram">Instagram</a>
+            <a href="#contact" aria-label="Contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-text">
+            <h2 class="typing-container" style="font-size: 2.5rem">
+              Step into Style with Our Footwear Collection
+              <span class="typing-caret">|</span>
+            </h2>
+            <p style="font-size: 1.2rem">
+              Explore our curated selection of the latest footwear trends. Find
+              the perfect pair that complements your unique style.
+            </p>
+            <a href="#products" class="btn hover-effect">Shop</a>
+            <a href="#products" class="btn hover-effect">Explore</a>
+          </div>
+          <img
+            src="/image (1).png"
+            alt="Footwear Collection"
+            class="hero-image"
+            style="float: right"
+          />
+        </div>
+      </section>
+
+      <section id="products" class="products">
+        <div class="container">
+          <h2>Our Products</h2>
+          <div class="product-grid">
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                alt="Nike Red Shoes"
+              />
+              <h3>Nike Air Max</h3>
+              <p class="price">$129.99</p>
+              <button class="btn hover-effect">Add to Cart</button>
+            </div>
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+                alt="Skate Shoes"
+              />
+              <h3>Vans Classic</h3>
+              <p class="price">$89.99</p>
+              <button class="btn hover-effect">Add to Cart</button>
+            </div>
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1549298916-b41d501d3772"
+                alt="Running Shoes"
+              />
+              <h3>Ultra Boost</h3>
+              <p class="price">$159.99</p>
+              <button class="btn hover-effect">Add to Cart</button>
+            </div>
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb"
+                alt="Casual Sneakers"
+              />
+              <h3>Casual Comfort</h3>
+              <p class="price">$99.99</p>
+              <button class="btn hover-effect">Add to Cart</button>
+            </div>
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa"
+                alt="Leather Boots"
+              />
+              <h3>Premium Boots</h3>
+              <p class="price">$179.99</p>
+              <button class="btn hover-effect">Add to Cart</button>
+            </div>
+            <div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1608231387042-66d1773070a5"
+                alt="Sports Shoes"
+              />
+              <h3>Sport Runner</h3>
+              <p class="price">$149.99</p>
+              <button class="btn hover-effect">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="instagram" class="instagram">
+        <div class="container">
+          <h2>Latest on Instagram</h2>
+          <p>Follow us for updates and offers</p>
+          <a
+            href="https://instagram.com/shoeshop"
+            class="btn hover-effect"
+            target="_blank"
+            >@shoeshop</a
+          >
+        </div>
+      </section>
+
+      <section class="latest-collection">
+        <div class="container">
+          <h2>Latest Collection</h2>
+          <div class="marquee-container">
+            <div class="marquee-track">
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=300&h=300&fit=crop"
+                  alt="Sneakers"
+                />
+
+                <h3>Urban Runner</h3>
+                <p class="price">$129.99</p>
+              </div>
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=300&h=300&fit=crop"
+                  alt="Running Shoes"
+                />
+
+                <h3>Speed Pro</h3>
+                <p class="price">$149.99</p>
+              </div>
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=300&h=300&fit=crop"
+                  alt="Boots"
+                />
+
+                <h3>Leather Boots</h3>
+                <p class="price">$169.99</p>
+              </div>
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1575537308664-3068e9c34413?w=300&h=300&fit=crop"
+                  alt="Sandals"
+                />
+
+                <h3>Summer Sandals</h3>
+                <p class="price">$79.99</p>
+              </div>
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=300&h=300&fit=crop"
+                  alt="High Heels"
+                />
+
+                <h3>Elegant Pumps</h3>
+                <p class="price">$139.99</p>
+              </div>
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1610892483156-7d1f7f1d7a0d?w=300&h=300&fit=crop"
+                  alt="Loafers"
+                />
+
+                <h3>Classic Loafers</h3>
+                <p class="price">$109.99</p>
+              </div>
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=300&h=300&fit=crop"
+                  alt="Trainers"
+                />
+
+                <h3>Gym Trainers</h3>
+                <p class="price">$99.99</p>
+              </div>
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1605348532760-6753d2c5e97e?w=300&h=300&fit=crop"
+                  alt="Hiking Shoes"
+                />
+
+                <h3>Trail Masters</h3>
+                <p class="price">$159.99</p>
+              </div>
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=300&h=300&fit=crop"
+                  alt="Dress Shoes"
+                />
+
+                <h3>Formal Dress</h3>
+                <p class="price">$189.99</p>
+              </div>
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=300&h=300&fit=crop"
+                  alt="Skate Shoes"
+                />
+
+                <h3>Skate Pro</h3>
+                <p class="price">$119.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <!-- Content will be dynamically populated by JavaScript -->
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <!-- INFO Section -->
+            <div class="footer-column">
+              <h4>INFO</h4>
+              <ul>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#">Releases</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Blogs</a></li>
+              </ul>
+            </div>
+
+            <!-- POLICIES Section -->
+            <div class="footer-column">
+              <h4>POLICIES</h4>
+              <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Returns & Exchange</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Order & Shipping</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
+
+            <!-- OUR SOCIALS Section -->
+            <div class="footer-column">
+              <h4>OUR SOCIALS</h4>
+              <ul class="social-links">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"
+                      alt="Facebook"
+                    />
+                    Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png"
+                      alt="Instagram"
+                    />
+                    Instagram</a
+                  >
+                </li>
+              </ul>
+              <div class="theme-toggle-container">
+                <h4>THEME</h4>
+                <label class="switch">
+                  <input id="theme-toggle" type="checkbox" />
+                  <div class="slider round">
+                    <div class="sun-moon">
+                      <svg
+                        id="moon-dot-1"
+                        class="moon-dot"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50"></circle>
+                      </svg>
+                      <svg
+                        id="moon-dot-2"
+                        class="moon-dot"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50"></circle>
+                      </svg>
+                      <svg
+                        id="moon-dot-3"
+                        class="moon-dot"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50"></circle>
+                      </svg>
+                      <svg
+                        id="light-ray-1"
+                        class="light-ray"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50"></circle>
+                      </svg>
+                      <svg
+                        id="light-ray-2"
+                        class="light-ray"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50"></circle>
+                      </svg>
+                      <svg
+                        id="light-ray-3"
+                        class="light-ray"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50"></circle>
+                      </svg>
+                      <svg
+                        id="cloud-1"
+                        class="cloud-dark"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50"></circle>
+                      </svg>
+                      <svg
+                        id="cloud-2"
+                        class="cloud-dark"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50"></circle>
+                      </svg>
+                      <svg
+                        id="cloud-3"
+                        class="cloud-dark"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50"></circle>
+                      </svg>
+                      <svg
+                        id="cloud-4"
+                        class="cloud-light"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50"></circle>
+                      </svg>
+                      <svg
+                        id="cloud-5"
+                        class="cloud-light"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50"></circle>
+                      </svg>
+                      <svg
+                        id="cloud-6"
+                        class="cloud-light"
+                        viewBox="0 0 100 100"
+                      >
+                        <circle cx="50" cy="50" r="50"></circle>
+                      </svg>
+                    </div>
+                    <div class="stars">
+                      <svg id="star-1" class="star" viewBox="0 0 20 20">
+                        <path
+                          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                        ></path>
+                      </svg>
+                      <svg id="star-2" class="star" viewBox="0 0 20 20">
+                        <path
+                          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                        ></path>
+                      </svg>
+                      <svg id="star-3" class="star" viewBox="0 0 20 20">
+                        <path
+                          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                        ></path>
+                      </svg>
+                      <svg id="star-4" class="star" viewBox="0 0 20 20">
+                        <path
+                          d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- SUBSCRIBE Section -->
+            <div class="footer-column">
+              <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+              <form class="subscribe-form" action="#" method="POST">
+                <input type="email" placeholder="Email Address" required />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Secured Checkout Section -->
+          <div class="secured-checkout">
+            <p>secured checkout with:</p>
+            <img src="https://via.placeholder.com/40x20?text=Visa" alt="Visa" />
+            <img
+              src="https://via.placeholder.com/40x20?text=MasterCard"
+              alt="MasterCard"
+            />
+            <img
+              src="https://via.placeholder.com/40x20?text=Paytm"
+              alt="Paytm"
+            />
+          </div>
+
+          <!-- Copyright -->
+          <p id="current-year">&copy; 2025, Shoe Shop. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
