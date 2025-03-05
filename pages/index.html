@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shoe Shop</title>
     <!-- Add to HTML head -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Modern, unique fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700&family=General+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
@@ -50,14 +53,27 @@
     <div id="main-content">
       <nav class="navbar">
         <div class="container">
-          <div class="nav-links">
-            <a href="#hero" aria-label="Home">Home</a>
-            <a href="#products" aria-label="Products">Products</a>
+          <div class="logo">
+            <a href="#" aria-label="Home">LUXE</a>
           </div>
-          <div class="separator"></div>
+          <div class="search-bar">
+            <input type="search" placeholder="Search for shoes..." aria-label="Search">
+            <button type="submit" aria-label="Submit search">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
           <div class="nav-links">
-            <a href="#instagram" aria-label="Instagram">Instagram</a>
-            <a href="#contact" aria-label="Contact">Contact</a>
+            <a href="#hero">Home</a>
+            <a href="#products">Products</a>
+            <a href="#instagram">Instagram</a>
+            <a href="#contact">Contact</a>
+            <a href="#cart" class="cart-icon">
+              <span class="cart-count">0</span>
+              ���
+            </a>
           </div>
         </div>
       </nav>
@@ -65,38 +81,77 @@
       <section id="hero" class="hero">
         <div class="container">
           <div class="hero-text">
-            <h2 class="typing-container" style="font-size: 2.5rem">
-              Step into Style with Our Footwear Collection
+            <h2 class="typing-container">
+              Step Into Luxury
               <span class="typing-caret">|</span>
             </h2>
-            <p style="font-size: 1.2rem">
-              Explore our curated selection of the latest footwear trends. Find
-              the perfect pair that complements your unique style.
+            <p>
+              Step into a world where style meets innovation. Our curated collection 
+              brings you the perfect blend of contemporary design and unmatched comfort.
             </p>
-            <a href="#products" class="btn hover-effect">Shop</a>
-            <a href="#products" class="btn hover-effect">Explore</a>
+            <div class="hero-buttons">
+              <a href="#products" class="btn primary-btn">Shop Now</a>
+              <a href="#latest" class="btn secondary-btn">New Arrivals</a>
+            </div>
           </div>
           <img
             src="/image (1).png"
             alt="Footwear Collection"
             class="hero-image"
-            style="float: right"
+            loading="eager"
           />
         </div>
       </section>
 
       <section id="products" class="products">
         <div class="container">
-          <h2>Our Products</h2>
+          <div class="products-header">
+            <h2>Our Products</h2>
+            <div class="product-controls">
+              <div class="filter-group">
+                <select aria-label="Filter by category">
+                  <option value="">All Categories</option>
+                  <option value="running">Running</option>
+                  <option value="casual">Casual</option>
+                  <option value="formal">Formal</option>
+                </select>
+                <select aria-label="Filter by size">
+                  <option value="">All Sizes</option>
+                  <option value="7">Size 7</option>
+                  <option value="8">Size 8</option>
+                  <option value="9">Size 9</option>
+                </select>
+              </div>
+              <select aria-label="Sort by">
+                <option value="popular">Most Popular</option>
+                <option value="newest">Newest First</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
           <div class="product-grid">
             <div class="product-card">
-              <img
-                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
-                alt="Nike Red Shoes"
-              />
-              <h3>Nike Air Max</h3>
-              <p class="price">$129.99</p>
-              <button class="btn hover-effect">Add to Cart</button>
+              <div class="product-badge">New</div>
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike Red Shoes">
+                <div class="quick-view">Quick View</div>
+              </div>
+              <div class="product-info">
+                <h3>Nike Air Max</h3>
+                <div class="product-rating">
+                  <span class="stars">★★★★☆</span>
+                  <span class="review-count">(42)</span>
+                </div>
+                <p class="price">$129.99</p>
+                <div class="size-options">
+                  <button>7</button>
+                  <button>8</button>
+                  <button>9</button>
+                  <button>10</button>
+                </div>
+                <button class="btn hover-effect">Add to Cart</button>
+              </div>
             </div>
             <div class="product-card">
               <img
