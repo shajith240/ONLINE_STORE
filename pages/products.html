@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE - Products</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components/buttons.css">
+    <link rel="stylesheet" href="../assets/css/pages/products.css">
+</head>
+<body class="theme-transition">
+    <div class="app">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <a href="../index.html" class="logo">LUXE</a>
+                    
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+
+                    <div class="nav-links">
+                        <div class="nav-group">
+                            <a href="../index.html" class="nav-link">Home</a>
+                            <a href="products.html" class="nav-link active">Products</a>
+                            <a href="about.html" class="nav-link">About</a>
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-actions">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search products..." aria-label="Search">
+                            <button aria-label="Search">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="theme-switch">
+                            <input type="checkbox" class="theme-switch__checkbox" id="theme-switch-checkbox">
+                            <label class="theme-switch__slider" for="theme-switch-checkbox"></label>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Products Header -->
+        <main class="products-page">
+            <div class="container">
+                <div class="products-header">
+                    <h1 class="products-title">All Products</h1>
+                    <div class="product-controls">
+                        <div class="filter-group">
+                            <select id="category-filter" aria-label="Filter by category">
+                                <option value="">All Categories</option>
+                                <option value="sneakers">Sneakers</option>
+                                <option value="boots">Boots</option>
+                                <option value="sandals">Sandals</option>
+                            </select>
+                            <select id="sort-filter" aria-label="Sort by">
+                                <option value="featured">Featured</option>
+                                <option value="newest">Newest</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="pagination-btn" disabled>Previous</button>
+                    <div class="pagination-numbers">
+                        <button class="pagination-number active">1</button>
+                        <button class="pagination-number">2</button>
+                        <button class="pagination-number">3</button>
+                    </div>
+                    <button class="pagination-btn">Next</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>LUXE</h3>
+                        <p>Premium footwear for every occasion.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <a href="../index.html">Home</a>
+                        <a href="products.html">Products</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <p>Email: info@luxe.com</p>
+                        <p>Phone: (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 LUXE. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../assets/js/theme-switch.js"></script>
+    <script src="../assets/js/products.js"></script>
+</body>
+</html>

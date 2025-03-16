@@ -1,0 +1,9 @@
+{
+  "public": ".",
+  "rewrites": [
+    { "source": "/pages/:page", "destination": "/pages/:page.html" },
+    { "source": "/**", "destination": "/pages/index.html" }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}

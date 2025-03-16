@@ -2,11 +2,16 @@
   "name": "shoe-shop",
   "version": "1.0.0",
   "description": "A simple shoe shop website",
-  "main": "index.html",
+  "main": "pages/index.html",
   "scripts": {
-    "start": "live-server"
+    "start": "serve -s . -p 3000",
+    "dev": "serve -s . -p 3000"
   },
   "dependencies": {
-    "live-server": "^1.2.1"
+    "@supabase/supabase-js": "^2.39.3",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
